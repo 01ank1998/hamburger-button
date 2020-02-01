@@ -1,0 +1,29 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.block > div{
+    width: 4rem;
+    height: 0.4rem;
+    background: grey;
+    border-radius: 2px;
+    margin: 0.4rem auto;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.block:hover .top{
+    transform: rotate(37deg);
+}
+
+.block:hover .middle{
+    opacity: 0;
+}
+
+.block:hover .last{
+    transform: rotate(-37deg);
+}
